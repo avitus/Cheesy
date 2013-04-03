@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96E1DBF0170CBD8F00D9DA8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */; };
+		96E1DBF2170CBD8F00D9DA8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */; };
+		96E1DBF4170CBD8F00D9DA8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */; };
+		96E1DBF6170CBD8F00D9DA8F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF5170CBD8F00D9DA8F /* CoreData.framework */; };
+		96E1DBFC170CBD8F00D9DA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DBFA170CBD8F00D9DA8F /* InfoPlist.strings */; };
+		96E1DBFE170CBD8F00D9DA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DBFD170CBD8F00D9DA8F /* main.m */; };
+		96E1DC02170CBD8F00D9DA8F /* CheesyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC01170CBD8F00D9DA8F /* CheesyAppDelegate.m */; };
+		96E1DC04170CBD9000D9DA8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC03170CBD9000D9DA8F /* Default.png */; };
+		96E1DC06170CBD9000D9DA8F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC05170CBD9000D9DA8F /* Default@2x.png */; };
+		96E1DC08170CBD9000D9DA8F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC07170CBD9000D9DA8F /* Default-568h@2x.png */; };
+		96E1DC0B170CBD9000D9DA8F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC09170CBD9000D9DA8F /* MainStoryboard.storyboard */; };
+		96E1DC0E170CBD9000D9DA8F /* Cheesy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC0C170CBD9000D9DA8F /* Cheesy.xcdatamodeld */; };
+		96E1DC11170CBD9000D9DA8F /* CheesyMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC10170CBD9000D9DA8F /* CheesyMasterViewController.m */; };
+		96E1DC14170CBD9000D9DA8F /* CheesyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC13170CBD9000D9DA8F /* CheesyDetailViewController.m */; };
+		96E1DC1C170CBD9000D9DA8F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC1B170CBD9000D9DA8F /* SenTestingKit.framework */; };
+		96E1DC1D170CBD9000D9DA8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */; };
+		96E1DC1E170CBD9000D9DA8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */; };
+		96E1DC1F170CBD9000D9DA8F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF5170CBD8F00D9DA8F /* CoreData.framework */; };
+		96E1DC27170CBD9000D9DA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC25170CBD9000D9DA8F /* InfoPlist.strings */; };
+		96E1DC2A170CBD9000D9DA8F /* CheesyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC29170CBD9000D9DA8F /* CheesyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96E1DC20170CBD9000D9DA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E1DBE4170CBD8F00D9DA8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E1DBEB170CBD8F00D9DA8F;
+			remoteInfo = Cheesy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96E1DBEC170CBD8F00D9DA8F /* Cheesy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheesy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96E1DBF5170CBD8F00D9DA8F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		96E1DBF9170CBD8F00D9DA8F /* Cheesy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cheesy-Info.plist"; sourceTree = "<group>"; };
+		96E1DBFB170CBD8F00D9DA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96E1DBFD170CBD8F00D9DA8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96E1DBFF170CBD8F00D9DA8F /* Cheesy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cheesy-Prefix.pch"; sourceTree = "<group>"; };
+		96E1DC00170CBD8F00D9DA8F /* CheesyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheesyAppDelegate.h; sourceTree = "<group>"; };
+		96E1DC01170CBD8F00D9DA8F /* CheesyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheesyAppDelegate.m; sourceTree = "<group>"; };
+		96E1DC03170CBD9000D9DA8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		96E1DC05170CBD9000D9DA8F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		96E1DC07170CBD9000D9DA8F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		96E1DC0A170CBD9000D9DA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		96E1DC0D170CBD9000D9DA8F /* Cheesy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cheesy.xcdatamodel; sourceTree = "<group>"; };
+		96E1DC0F170CBD9000D9DA8F /* CheesyMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheesyMasterViewController.h; sourceTree = "<group>"; };
+		96E1DC10170CBD9000D9DA8F /* CheesyMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheesyMasterViewController.m; sourceTree = "<group>"; };
+		96E1DC12170CBD9000D9DA8F /* CheesyDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheesyDetailViewController.h; sourceTree = "<group>"; };
+		96E1DC13170CBD9000D9DA8F /* CheesyDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheesyDetailViewController.m; sourceTree = "<group>"; };
+		96E1DC1A170CBD9000D9DA8F /* CheesyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheesyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E1DC1B170CBD9000D9DA8F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		96E1DC24170CBD9000D9DA8F /* CheesyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CheesyTests-Info.plist"; sourceTree = "<group>"; };
+		96E1DC26170CBD9000D9DA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96E1DC28170CBD9000D9DA8F /* CheesyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheesyTests.h; sourceTree = "<group>"; };
+		96E1DC29170CBD9000D9DA8F /* CheesyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheesyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96E1DBE9170CBD8F00D9DA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E1DBF0170CBD8F00D9DA8F /* UIKit.framework in Frameworks */,
+				96E1DBF2170CBD8F00D9DA8F /* Foundation.framework in Frameworks */,
+				96E1DBF4170CBD8F00D9DA8F /* CoreGraphics.framework in Frameworks */,
+				96E1DBF6170CBD8F00D9DA8F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E1DC16170CBD9000D9DA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E1DC1C170CBD9000D9DA8F /* SenTestingKit.framework in Frameworks */,
+				96E1DC1D170CBD9000D9DA8F /* UIKit.framework in Frameworks */,
+				96E1DC1E170CBD9000D9DA8F /* Foundation.framework in Frameworks */,
+				96E1DC1F170CBD9000D9DA8F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96E1DBE3170CBD8F00D9DA8F = {
+			isa = PBXGroup;
+			children = (
+				96E1DBF7170CBD8F00D9DA8F /* Cheesy */,
+				96E1DC22170CBD9000D9DA8F /* CheesyTests */,
+				96E1DBEE170CBD8F00D9DA8F /* Frameworks */,
+				96E1DBED170CBD8F00D9DA8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96E1DBED170CBD8F00D9DA8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96E1DBEC170CBD8F00D9DA8F /* Cheesy.app */,
+				96E1DC1A170CBD9000D9DA8F /* CheesyTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96E1DBEE170CBD8F00D9DA8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */,
+				96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */,
+				96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */,
+				96E1DBF5170CBD8F00D9DA8F /* CoreData.framework */,
+				96E1DC1B170CBD9000D9DA8F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96E1DBF7170CBD8F00D9DA8F /* Cheesy */ = {
+			isa = PBXGroup;
+			children = (
+				96E1DC00170CBD8F00D9DA8F /* CheesyAppDelegate.h */,
+				96E1DC01170CBD8F00D9DA8F /* CheesyAppDelegate.m */,
+				96E1DC09170CBD9000D9DA8F /* MainStoryboard.storyboard */,
+				96E1DC0F170CBD9000D9DA8F /* CheesyMasterViewController.h */,
+				96E1DC10170CBD9000D9DA8F /* CheesyMasterViewController.m */,
+				96E1DC12170CBD9000D9DA8F /* CheesyDetailViewController.h */,
+				96E1DC13170CBD9000D9DA8F /* CheesyDetailViewController.m */,
+				96E1DC0C170CBD9000D9DA8F /* Cheesy.xcdatamodeld */,
+				96E1DBF8170CBD8F00D9DA8F /* Supporting Files */,
+			);
+			path = Cheesy;
+			sourceTree = "<group>";
+		};
+		96E1DBF8170CBD8F00D9DA8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E1DBF9170CBD8F00D9DA8F /* Cheesy-Info.plist */,
+				96E1DBFA170CBD8F00D9DA8F /* InfoPlist.strings */,
+				96E1DBFD170CBD8F00D9DA8F /* main.m */,
+				96E1DBFF170CBD8F00D9DA8F /* Cheesy-Prefix.pch */,
+				96E1DC03170CBD9000D9DA8F /* Default.png */,
+				96E1DC05170CBD9000D9DA8F /* Default@2x.png */,
+				96E1DC07170CBD9000D9DA8F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96E1DC22170CBD9000D9DA8F /* CheesyTests */ = {
+			isa = PBXGroup;
+			children = (
+				96E1DC28170CBD9000D9DA8F /* CheesyTests.h */,
+				96E1DC29170CBD9000D9DA8F /* CheesyTests.m */,
+				96E1DC23170CBD9000D9DA8F /* Supporting Files */,
+			);
+			path = CheesyTests;
+			sourceTree = "<group>";
+		};
+		96E1DC23170CBD9000D9DA8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E1DC24170CBD9000D9DA8F /* CheesyTests-Info.plist */,
+				96E1DC25170CBD9000D9DA8F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96E1DBEB170CBD8F00D9DA8F /* Cheesy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E1DC2D170CBD9000D9DA8F /* Build configuration list for PBXNativeTarget "Cheesy" */;
+			buildPhases = (
+				96E1DBE8170CBD8F00D9DA8F /* Sources */,
+				96E1DBE9170CBD8F00D9DA8F /* Frameworks */,
+				96E1DBEA170CBD8F00D9DA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cheesy;
+			productName = Cheesy;
+			productReference = 96E1DBEC170CBD8F00D9DA8F /* Cheesy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96E1DC19170CBD9000D9DA8F /* CheesyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E1DC30170CBD9000D9DA8F /* Build configuration list for PBXNativeTarget "CheesyTests" */;
+			buildPhases = (
+				96E1DC15170CBD9000D9DA8F /* Sources */,
+				96E1DC16170CBD9000D9DA8F /* Frameworks */,
+				96E1DC17170CBD9000D9DA8F /* Resources */,
+				96E1DC18170CBD9000D9DA8F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E1DC21170CBD9000D9DA8F /* PBXTargetDependency */,
+			);
+			name = CheesyTests;
+			productName = CheesyTests;
+			productReference = 96E1DC1A170CBD9000D9DA8F /* CheesyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96E1DBE4170CBD8F00D9DA8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Cheesy;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andy Vitus";
+			};
+			buildConfigurationList = 96E1DBE7170CBD8F00D9DA8F /* Build configuration list for PBXProject "Cheesy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96E1DBE3170CBD8F00D9DA8F;
+			productRefGroup = 96E1DBED170CBD8F00D9DA8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96E1DBEB170CBD8F00D9DA8F /* Cheesy */,
+				96E1DC19170CBD9000D9DA8F /* CheesyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96E1DBEA170CBD8F00D9DA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E1DBFC170CBD8F00D9DA8F /* InfoPlist.strings in Resources */,
+				96E1DC04170CBD9000D9DA8F /* Default.png in Resources */,
+				96E1DC06170CBD9000D9DA8F /* Default@2x.png in Resources */,
+				96E1DC08170CBD9000D9DA8F /* Default-568h@2x.png in Resources */,
+				96E1DC0B170CBD9000D9DA8F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E1DC17170CBD9000D9DA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E1DC27170CBD9000D9DA8F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96E1DC18170CBD9000D9DA8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96E1DBE8170CBD8F00D9DA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E1DBFE170CBD8F00D9DA8F /* main.m in Sources */,
+				96E1DC02170CBD8F00D9DA8F /* CheesyAppDelegate.m in Sources */,
+				96E1DC0E170CBD9000D9DA8F /* Cheesy.xcdatamodeld in Sources */,
+				96E1DC11170CBD9000D9DA8F /* CheesyMasterViewController.m in Sources */,
+				96E1DC14170CBD9000D9DA8F /* CheesyDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E1DC15170CBD9000D9DA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E1DC2A170CBD9000D9DA8F /* CheesyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96E1DC21170CBD9000D9DA8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E1DBEB170CBD8F00D9DA8F /* Cheesy */;
+			targetProxy = 96E1DC20170CBD9000D9DA8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96E1DBFA170CBD8F00D9DA8F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E1DBFB170CBD8F00D9DA8F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96E1DC09170CBD9000D9DA8F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E1DC0A170CBD9000D9DA8F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		96E1DC25170CBD9000D9DA8F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E1DC26170CBD9000D9DA8F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96E1DC2B170CBD9000D9DA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96E1DC2C170CBD9000D9DA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96E1DC2E170CBD9000D9DA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cheesy/Cheesy-Prefix.pch";
+				INFOPLIST_FILE = "Cheesy/Cheesy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96E1DC2F170CBD9000D9DA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cheesy/Cheesy-Prefix.pch";
+				INFOPLIST_FILE = "Cheesy/Cheesy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		96E1DC31170CBD9000D9DA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cheesy.app/Cheesy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cheesy/Cheesy-Prefix.pch";
+				INFOPLIST_FILE = "CheesyTests/CheesyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		96E1DC32170CBD9000D9DA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cheesy.app/Cheesy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cheesy/Cheesy-Prefix.pch";
+				INFOPLIST_FILE = "CheesyTests/CheesyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96E1DBE7170CBD8F00D9DA8F /* Build configuration list for PBXProject "Cheesy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E1DC2B170CBD9000D9DA8F /* Debug */,
+				96E1DC2C170CBD9000D9DA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E1DC2D170CBD9000D9DA8F /* Build configuration list for PBXNativeTarget "Cheesy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E1DC2E170CBD9000D9DA8F /* Debug */,
+				96E1DC2F170CBD9000D9DA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		96E1DC30170CBD9000D9DA8F /* Build configuration list for PBXNativeTarget "CheesyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E1DC31170CBD9000D9DA8F /* Debug */,
+				96E1DC32170CBD9000D9DA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96E1DC0C170CBD9000D9DA8F /* Cheesy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96E1DC0D170CBD9000D9DA8F /* Cheesy.xcdatamodel */,
+			);
+			currentVersion = 96E1DC0D170CBD9000D9DA8F /* Cheesy.xcdatamodel */;
+			path = Cheesy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 96E1DBE4170CBD8F00D9DA8F /* Project object */;
+}
