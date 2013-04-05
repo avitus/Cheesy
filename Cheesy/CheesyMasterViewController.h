@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Parse/Parse.h>
 #import <CoreData/CoreData.h>
 
-@interface CheesyMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface CheesyMasterViewController : PFQueryTableViewController <NSFetchedResultsControllerDelegate, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+// @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+// @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
