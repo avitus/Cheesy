@@ -231,6 +231,23 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+// ----------------------------------------------------------------------------------------------------
+// Prepare to Seque to Detail View
+// ----------------------------------------------------------------------------------------------------
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"ShowTastingDetails"]) {
+        
+        CheesyDetailViewController *detailViewController = [segue destinationViewController];
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        CheeseTasting *object = [self.objects objectAtIndex:indexPath.row];
+        
+        detailViewController.tasting = object;
+        
+    }
+}
 
 // ----------------------------------------------------------------------------------------------------
 // Handle memory warnings

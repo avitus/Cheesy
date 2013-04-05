@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CheesyDetailViewController : UIViewController
+@class CheeseTasting;
 
-@property (strong, nonatomic) id detailItem;
+@interface CheesyDetailViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) CheeseTasting *tasting;
+@property (weak, nonatomic) IBOutlet UILabel *cheeseNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cheeseStoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *qualityRatingLabel;
+
 @end
