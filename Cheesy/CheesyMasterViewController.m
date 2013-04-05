@@ -14,7 +14,6 @@
 
 @implementation CheesyMasterViewController
 
-
 // ----------------------------------------------------------------------------------------------------
 // Initialize and customize table
 // ----------------------------------------------------------------------------------------------------
@@ -105,6 +104,9 @@
     [super awakeFromNib];
 }
 
+// ----------------------------------------------------------------------------------------------------
+// View Loaded - add buttons
+// ----------------------------------------------------------------------------------------------------
 
 - (void)viewDidLoad
 {
@@ -119,6 +121,10 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
 }
+
+// ----------------------------------------------------------------------------------------------------
+// View Appeared - authenticate user
+// ----------------------------------------------------------------------------------------------------
 
 - (void)viewDidAppear:(BOOL)animated {
     
