@@ -38,6 +38,7 @@
 		96E1DC44170CBF2700D9DA8F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC43170CBF2700D9DA8F /* StoreKit.framework */; };
 		96E1DC46170CBF3200D9DA8F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC45170CBF3200D9DA8F /* SystemConfiguration.framework */; };
 		96E1DC84170E425600D9DA8F /* CheeseTasting.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC83170E425600D9DA8F /* CheeseTasting.m */; };
+		96E1DC87170F961400D9DA8F /* AddTastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC86170F961400D9DA8F /* AddTastingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		96E1DC45170CBF3200D9DA8F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		96E1DC82170E425600D9DA8F /* CheeseTasting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheeseTasting.h; sourceTree = "<group>"; };
 		96E1DC83170E425600D9DA8F /* CheeseTasting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheeseTasting.m; sourceTree = "<group>"; };
+		96E1DC85170F961400D9DA8F /* AddTastingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTastingViewController.h; sourceTree = "<group>"; };
+		96E1DC86170F961400D9DA8F /* AddTastingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTastingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				96E1DC09170CBD9000D9DA8F /* MainStoryboard.storyboard */,
 				96E1DC0F170CBD9000D9DA8F /* CheesyMasterViewController.h */,
 				96E1DC10170CBD9000D9DA8F /* CheesyMasterViewController.m */,
+				96E1DC85170F961400D9DA8F /* AddTastingViewController.h */,
+				96E1DC86170F961400D9DA8F /* AddTastingViewController.m */,
 				96E1DC12170CBD9000D9DA8F /* CheesyDetailViewController.h */,
 				96E1DC13170CBD9000D9DA8F /* CheesyDetailViewController.m */,
 				96E1DC82170E425600D9DA8F /* CheeseTasting.h */,
@@ -336,6 +341,7 @@
 				96E1DC11170CBD9000D9DA8F /* CheesyMasterViewController.m in Sources */,
 				96E1DC14170CBD9000D9DA8F /* CheesyDetailViewController.m in Sources */,
 				96E1DC84170E425600D9DA8F /* CheeseTasting.m in Sources */,
+				96E1DC87170F961400D9DA8F /* AddTastingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
