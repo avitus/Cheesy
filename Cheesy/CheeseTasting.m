@@ -14,6 +14,7 @@
 
 @implementation CheeseTasting
 
+@dynamic user;
 @dynamic cheeseName;
 @dynamic qualityRating;
 @dynamic pricePerLb;

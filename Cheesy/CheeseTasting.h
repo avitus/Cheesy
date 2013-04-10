@@ -13,6 +13,7 @@
 
 + (NSString *)parseClassName;
 
+@property (retain) PFObject *user;
 @property (retain) NSString *cheeseName;
 @property (retain) NSString *storeName;
 @property (retain) NSNumber *qualityRating;

@@ -12,7 +12,6 @@
 #import "AddTastingViewController.h"
 #import "CheeseTasting.h"
 
-
 @implementation CheesyMasterViewController
 
 // ----------------------------------------------------------------------------------------------------
@@ -55,8 +54,12 @@
 // ----------------------------------------------------------------------------------------------------
 
 - (PFQuery *)queryForTable {
-    
+        
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
+    
+    // Retrieve CheeseTastings only for current user
+    [query whereKey:@"user" equalTo:[PFUser currentUser]];
+    
     
     // If Pull To Refresh is enabled, query against the network by default.
     if (self.pullToRefreshEnabled) {
@@ -126,6 +129,7 @@
     [super viewDidAppear:animated];
     
     if (![PFUser currentUser]) { // No user logged in
+        
         // Create the log in view controller
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
         [logInViewController setDelegate:self]; // Set ourselves as the delegate
@@ -142,6 +146,9 @@
     }
 }
 
+// ----------------------------------------------------------------------------------------------------
+// Main table view
+// ----------------------------------------------------------------------------------------------------
 
 #pragma mark - PFQueryTableViewController
 
@@ -156,6 +163,11 @@
     
     // This method is called every time objects are loaded from Parse via the PFQuery
 }
+
+
+// ----------------------------------------------------------------------------------------------------
+// Handle Logins
+// ----------------------------------------------------------------------------------------------------
 
 #pragma mark - PFLogInViewControllerDelegate
 
@@ -185,6 +197,9 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+// ----------------------------------------------------------------------------------------------------
+// Handle Sign Ups
+// ----------------------------------------------------------------------------------------------------
 
 #pragma mark - PFSignUpViewControllerDelegate
 
@@ -227,9 +242,30 @@
 
 #pragma mark - Logout button handler
 
+// ----------------------------------------------------------------------------------------------------
+// Logout Current User
+// ----------------------------------------------------------------------------------------------------
+
 - (IBAction)logOutButtonTapAction:(id)sender {
+    
     [PFUser logOut];
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+    // TODO: Extract this ... repeat of code in viewDidAppear
+    
+    // Create the log in view controller
+    PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+    [logInViewController setDelegate:self]; // Set ourselves as the delegate
+    
+    // Create the sign up view controller
+    PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+    [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+    
+    // Assign our sign up controller to be displayed from the login controller
+    [logInViewController setSignUpController:signUpViewController];
+    
+    // Present the log in view controller
+    [self presentViewController:logInViewController animated:YES completion:NULL];
 }
 
 // ----------------------------------------------------------------------------------------------------
@@ -264,6 +300,9 @@
             [ addController.cheeseTasting save ];
         }
         [self dismissViewControllerAnimated:YES completion:NULL];
+        
+        // Need to refresh the view
+        
     }
 }
 

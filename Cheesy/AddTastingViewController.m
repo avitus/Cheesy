@@ -58,6 +58,8 @@
         if ([self.cheeseNameInput.text length] || [self.storeNameInput.text length]|| [self.ratingInput.text length]) {
             
             CheeseTasting *tasting = [CheeseTasting object];
+            
+            tasting.user          = [PFUser currentUser];
             tasting.cheeseName    = self.cheeseNameInput.text;
             tasting.storeName     = self.storeNameInput.text;
             tasting.qualityRating = [NSNumber numberWithInteger: [[self.ratingInput text] integerValue]];
