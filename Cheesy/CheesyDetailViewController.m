@@ -36,6 +36,7 @@
         self.cheeseNameLabel.text    = theTasting.cheeseName;
         self.cheeseStoreLabel.text   = theTasting.storeName;
         self.qualityRatingLabel.text = [NSString stringWithFormat:@"%@",theTasting.qualityRating];
+        self.pricePerPoundLabel.text = [NSString stringWithFormat:@"$%@",theTasting.pricePerLb];
     }
 }
 

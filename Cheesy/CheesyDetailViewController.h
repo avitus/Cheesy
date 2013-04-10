@@ -16,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *cheeseNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cheeseStoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *qualityRatingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pricePerPoundLabel;
 
 @end
+        

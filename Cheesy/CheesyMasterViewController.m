@@ -9,6 +9,7 @@
 #import <Parse/Parse.h>
 #import "CheesyMasterViewController.h"
 #import "CheesyDetailViewController.h"
+#import "AddTastingViewController.h"
 #import "CheeseTasting.h"
 
 
@@ -114,12 +115,6 @@
     
 	// Do any additional setup after loading the view, typically from a nib.
     
-    // Edit item button
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    // Add item button
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 // ----------------------------------------------------------------------------------------------------
@@ -252,6 +247,30 @@
         
         detailViewController.tasting = object;
         
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------
+// Unwind Seques from AddTasting page
+// ----------------------------------------------------------------------------------------------------
+
+- (IBAction)done:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+        
+        AddTastingViewController *addController = [segue sourceViewController];
+        if (addController.cheeseTasting) {
+            // save data to Parse
+            [ addController.cheeseTasting save ];
+        }
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+}
+
+- (IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
 

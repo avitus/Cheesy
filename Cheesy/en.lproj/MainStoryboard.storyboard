@@ -108,12 +108,12 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klf-fu-Jeg">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klf-fu-Jeg">
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" type="user" id="TPe-lb-CuG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="mYG-Qc-ML2" id="wU7-yV-Sj3"/>
                                                     </connections>
@@ -141,12 +141,12 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-Pu-fhf">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-Pu-fhf">
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" type="user" id="hGS-Wb-mP8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="mYG-Qc-ML2" id="v4z-0f-YYd"/>
                                                     </connections>
@@ -171,8 +171,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="lfl-P8-weh">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cQG-Sg-1Xb"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="1uP-hg-e2i"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cQG-Sg-1Xb">
+                            <connections>
+                                <segue destination="n5C-51-4tY" kind="unwind" identifier="CancelInput" unwindAction="cancel:" id="lae-eL-Rgc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="1uP-hg-e2i">
+                            <connections>
+                                <segue destination="n5C-51-4tY" kind="unwind" identifier="ReturnInput" unwindAction="done:" id="CZr-sH-26f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cheeseNameInput" destination="tD0-nU-TuD" id="WX2-U7-hYM"/>
@@ -182,6 +190,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7O-Ka-dR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="n5C-51-4tY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="985" y="-700"/>
         </scene>
@@ -224,9 +233,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="36">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="g8O-FS-qco">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dRS-Hi-jIa">
                             <connections>
-                                <segue destination="ijH-oj-dxp" kind="modal" id="EC3-S5-gOZ"/>
+                                <segue destination="ijH-oj-dxp" kind="modal" id="ovm-NY-dKC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -354,6 +363,7 @@
                     <connections>
                         <outlet property="cheeseNameLabel" destination="zBc-e8-E8z" id="mDP-Lu-4mV"/>
                         <outlet property="cheeseStoreLabel" destination="14O-gW-CRY" id="b6V-l1-Myg"/>
+                        <outlet property="pricePerPoundLabel" destination="r0A-Pa-N79" id="NDP-2r-SgO"/>
                         <outlet property="qualityRatingLabel" destination="XnT-h0-Sry" id="j3A-2e-HkB"/>
                     </connections>
                 </tableViewController>
@@ -395,17 +405,25 @@
             <relationships>
                 <relationship kind="outlet" name="cheeseNameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="cheeseStoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pricePerPoundLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="qualityRatingLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="CheesyMasterViewController" superclassName="PFQueryTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CheesyMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="PFQueryTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PFQueryTableViewController.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
