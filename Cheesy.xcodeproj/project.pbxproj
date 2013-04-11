@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962DC6721716260B00779437 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 962DC6711716260B00779437 /* Default-568h@2x.png */; };
+		96814A2B171611E30028E86C /* cheesy_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2A171611E30028E86C /* cheesy_icon.png */; };
+		96814A2D171611F30028E86C /* cheesy_icon_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2C171611F30028E86C /* cheesy_icon_@2x.png */; };
+		96814A2F171624D40028E86C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2E171624D40028E86C /* Default.png */; };
+		96814A31171625050028E86C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A30171625050028E86C /* Default@2x.png */; };
 		96E1DBF0170CBD8F00D9DA8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */; };
 		96E1DBF2170CBD8F00D9DA8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */; };
 		96E1DBF4170CBD8F00D9DA8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */; };
@@ -52,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		962DC6711716260B00779437 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		96814A2A171611E30028E86C /* cheesy_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheesy_icon.png; sourceTree = "<group>"; };
+		96814A2C171611F30028E86C /* cheesy_icon_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesy_icon_@2x.png"; sourceTree = "<group>"; };
+		96814A2E171624D40028E86C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		96814A30171625050028E86C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		96E1DBEC170CBD8F00D9DA8F /* Cheesy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheesy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +143,11 @@
 		96E1DBE3170CBD8F00D9DA8F = {
 			isa = PBXGroup;
 			children = (
+				962DC6711716260B00779437 /* Default-568h@2x.png */,
+				96814A30171625050028E86C /* Default@2x.png */,
+				96814A2E171624D40028E86C /* Default.png */,
+				96814A2C171611F30028E86C /* cheesy_icon_@2x.png */,
+				96814A2A171611E30028E86C /* cheesy_icon.png */,
 				96E1DBF7170CBD8F00D9DA8F /* Cheesy */,
 				96E1DC22170CBD9000D9DA8F /* CheesyTests */,
 				96E1DBEE170CBD8F00D9DA8F /* Frameworks */,
@@ -301,6 +316,11 @@
 				96E1DC06170CBD9000D9DA8F /* Default@2x.png in Resources */,
 				96E1DC08170CBD9000D9DA8F /* Default-568h@2x.png in Resources */,
 				96E1DC0B170CBD9000D9DA8F /* MainStoryboard.storyboard in Resources */,
+				96814A2B171611E30028E86C /* cheesy_icon.png in Resources */,
+				96814A2D171611F30028E86C /* cheesy_icon_@2x.png in Resources */,
+				96814A2F171624D40028E86C /* Default.png in Resources */,
+				96814A31171625050028E86C /* Default@2x.png in Resources */,
+				962DC6721716260B00779437 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +550,7 @@
 				96E1DC2F170CBD9000D9DA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96E1DC30170CBD9000D9DA8F /* Build configuration list for PBXNativeTarget "CheesyTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +559,7 @@
 				96E1DC32170CBD9000D9DA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

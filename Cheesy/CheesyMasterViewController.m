@@ -54,12 +54,16 @@
 // ----------------------------------------------------------------------------------------------------
 
 - (PFQuery *)queryForTable {
-        
+
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
     
-    // Retrieve CheeseTastings only for current user
-    [query whereKey:@"user" equalTo:[PFUser currentUser]];
-    
+    if ([PFUser currentUser]) { // No user logged in
+        // Retrieve CheeseTastings only for current user
+        [query whereKey:@"user" equalTo:[PFUser currentUser]];
+    } else {
+        query.limit = 7;
+        [query whereKey:@"user" equalTo:@"public"]; // hack: query for fake user
+    }
     
     // If Pull To Refresh is enabled, query against the network by default.
     if (self.pullToRefreshEnabled) {
