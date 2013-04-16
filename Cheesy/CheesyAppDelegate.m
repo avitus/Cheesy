@@ -25,7 +25,19 @@
     
     // Add Parse Analytics
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    //Set the status bar to black color.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
     
+    //Change @"menubar.png" to the file name of your image.
+    UIImage *navBar = [UIImage imageNamed:@"navbar.png"];
+    
+    // Set navigation bar background image
+    [[UINavigationBar appearance] setBackgroundImage:navBar forBarMetrics:UIBarMetricsDefault];
+    
+    // Set color for navigation buttons
+        
+
     // Override point for customization after application launch.
 
     

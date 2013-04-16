@@ -82,9 +82,31 @@
 }
 
 // ----------------------------------------------------------------------------------------------------
-// Override to customize the look of a cell representing an object. The default is to display
-// a UITableViewCellStyleDefault style cell with the label being the textKey in the object,
-// and the imageView being the imageKey in the object.
+// Load a background image for the table cell   
+// ----------------------------------------------------------------------------------------------------
+
+-(UIImage *)cellBackgroundForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    NSInteger rowCount =[self tableView:[self tableView] numberOfRowsInSection:0];    
+    NSInteger rowIndex = indexPath.row;
+    UIImage *background =nil;
+
+    // TODO: use a different image for top and bottom row.
+    // See http://www.verious.com/tutorial/customize-uitable-view-and-uitable-view-cell-background-using-storyboard/
+    
+    if(rowIndex ==0) {
+        background =[UIImage imageNamed:@"list-item.png"];
+    } else if(rowIndex == rowCount -1) {
+        background =[UIImage imageNamed:@"list-item.png"];
+    } else {
+        background =[UIImage imageNamed:@"list-item.png"];
+    }
+    
+    return background;
+}
+
+// ----------------------------------------------------------------------------------------------------
+// Customize the table cell
 // ----------------------------------------------------------------------------------------------------
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
@@ -97,8 +119,16 @@
     }
     
     // Configure the cell
-    cell.textLabel.text = [object objectForKey:self.textKey];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [object objectForKey:@"qualityRating"]];
+    cell.textLabel.text       = [object objectForKey:self.textKey];
+    
     // cell.imageView.file = [object objectForKey:self.imageKey];
+    
+    // Add a background image
+    UIImage *background = [self cellBackgroundForRowAtIndexPath:indexPath];
+    UIImageView *cellBackgroundView = [[UIImageView alloc] initWithImage:background];
+    cellBackgroundView.image = background;
+    cell.backgroundView = cellBackgroundView;
     
     return cell;
 }
