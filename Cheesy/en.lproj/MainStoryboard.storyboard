@@ -198,7 +198,7 @@
         <scene sceneID="18">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="CheesyMasterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -232,13 +232,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Cheeses" id="36">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="4rY-Mg-TfW">
-                            <color key="tintColor" red="0.20956667313664601" green="0.10115224150133054" blue="0.086016370865684144" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="logOutButtonTapAction:" destination="12" id="XDg-X3-Whl"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dRS-Hi-jIa">
-                            <color key="tintColor" red="0.20956667309999999" green="0.1011522415" blue="0.086016370869999997" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="ijH-oj-dxp" kind="modal" id="ovm-NY-dKC"/>
                             </connections>
@@ -253,7 +251,7 @@
         <scene sceneID="uWz-wJ-scq">
             <objects>
                 <tableViewController id="Dtn-tc-eq3" customClass="CheesyDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1x2-0U-7IN">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1x2-0U-7IN">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

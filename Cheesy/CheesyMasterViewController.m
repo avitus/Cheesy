@@ -150,6 +150,9 @@
 {
     [super viewDidLoad];
     
+    // Add background image
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"leather-background.png"]];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     
 }

@@ -26,24 +26,71 @@
     // Add Parse Analytics
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
-    //Set the status bar to black color.
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
-    
-    //Change @"menubar.png" to the file name of your image.
-    UIImage *navBar = [UIImage imageNamed:@"navbar.png"];
-    
-    // Set navigation bar background image
-    [[UINavigationBar appearance] setBackgroundImage:navBar forBarMetrics:UIBarMetricsDefault];
-    
-    // Set color for navigation buttons
-        
-
     // Override point for customization after application launch.
-
+    [self customizeAppearance];
     
     return YES;
 }
-							
+
+- (void)customizeAppearance
+{
+    //Set the status bar to black color.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
+    
+    // Customize navigation bar - http://www.raywenderlich.com/21703/user-interface-customization-in-ios-6
+    // Create resizable images
+    UIImage *gradientImage44 = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
+    UIImage *gradientImage32 = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
+    
+    // Set the background image for *all* UINavigationBars
+    [[UINavigationBar appearance] setBackgroundImage:gradientImage44 forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:gradientImage32 forBarMetrics:UIBarMetricsLandscapePhone];
+    
+    // Customize the title text for *all* UINavigationBars
+//    [[UINavigationBar appearance] setTitleTextAttributes:
+//     [NSDictionary dictionaryWithObjectsAndKeys:
+//      [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+//      UITextAttributeTextColor,
+//      [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],
+//      UITextAttributeTextShadowColor,
+//      [NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
+//      UITextAttributeTextShadowOffset,
+//      [UIFont fontWithName:@"Arial-Bold" size:0.0],
+//      UITextAttributeFont,
+//      nil]];
+    
+    // Customize navigation button - http://www.raywenderlich.com/21703/user-interface-customization-in-ios-6
+    UIImage *button30 = [[UIImage imageNamed:@"navbar-icon.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    UIImage *button24 = [[UIImage imageNamed:@"navbar-icon.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    [[UIBarButtonItem appearance] setBackgroundImage:button30 forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackgroundImage:button24 forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
+    
+//    [[UIBarButtonItem appearance] setTitleTextAttributes:
+//     [NSDictionary dictionaryWithObjectsAndKeys:
+//      [UIColor colorWithRed:220.0/255.0 green:104.0/255.0 blue:1.0/255.0 alpha:1.0],
+//      UITextAttributeTextColor,
+//      [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0],
+//      UITextAttributeTextShadowColor,
+//      [NSValue valueWithUIOffset:UIOffsetMake(0, 1)],
+//      UITextAttributeTextShadowOffset,
+//      [UIFont fontWithName:@"AmericanTypewriter" size:0.0],
+//      UITextAttributeFont,
+//      nil]
+//                                                forState:UIControlStateNormal];
+    
+    // Customize back button
+    UIImage *buttonBack30 = [[UIImage imageNamed:@"back-button.png"]
+                             resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 5)];
+    UIImage *buttonBack24 = [[UIImage imageNamed:@"back-button.png"]
+                             resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 5)];
+    
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:buttonBack30
+                                                      forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:buttonBack24
+                                                      forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
