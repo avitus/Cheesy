@@ -232,11 +232,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Cheeses" id="36">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="4rY-Mg-TfW">
+                            <color key="tintColor" red="0.20956667313664601" green="0.10115224150133054" blue="0.086016370865684144" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="logOutButtonTapAction:" destination="12" id="XDg-X3-Whl"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dRS-Hi-jIa">
+                            <color key="tintColor" red="0.20956667309999999" green="0.1011522415" blue="0.086016370869999997" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="ijH-oj-dxp" kind="modal" id="ovm-NY-dKC"/>
                             </connections>
