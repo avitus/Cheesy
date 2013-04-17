@@ -32,8 +32,13 @@
     // Update the user interface for the detail item.
     CheeseTasting *theTasting = self.tasting;
     
+    PFObject *cheese = [theTasting objectForKey:@"cheese"];
+    [cheese fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        self.cheeseNameLabel.text = [cheese objectForKey:@"cheeseName"];
+    }];
+    
     if (theTasting) {
-        self.cheeseNameLabel.text    = theTasting.cheeseName;
+        //self.cheeseNameLabel.text    = cheeseName;
         self.cheeseStoreLabel.text   = theTasting.storeName;
         self.qualityRatingLabel.text = [NSString stringWithFormat:@"%@",theTasting.qualityRating];
         self.pricePerPoundLabel.text = [NSString stringWithFormat:@"$%@",theTasting.pricePerLb];

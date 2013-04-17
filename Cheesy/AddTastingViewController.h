@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class CheeseTasting;
+@class Cheese;
 
 @interface AddTastingViewController : UITableViewController <UITextFieldDelegate>
 
@@ -18,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *ratingInput;
 
 @property (strong, nonatomic) CheeseTasting *cheeseTasting;
+@property (strong, nonatomic) Cheese *cheese;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "AddTastingViewController.h"
 #import "CheeseTasting.h"
+#import "Cheese.h"
 
 @interface AddTastingViewController ()
 
@@ -45,13 +46,6 @@
     return YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 // ----------------------------------------------------------------------------------------------------
 // Seque back to Master View Controller
 // ----------------------------------------------------------------------------------------------------
@@ -61,16 +55,35 @@
         if ([self.cheeseNameInput.text length] || [self.storeNameInput.text length]|| [self.ratingInput.text length]) {
             
             CheeseTasting *tasting = [CheeseTasting object];
+            Cheese *newCheese      = [Cheese object];
             
+            // Create a new cheese
+            newCheese.cheeseName  = self.cheeseNameInput.text;
+            
+            // Create a new tasting
             tasting.user          = [PFUser currentUser];
-            tasting.cheeseName    = self.cheeseNameInput.text;
             tasting.storeName     = self.storeNameInput.text;
             tasting.qualityRating = [NSNumber numberWithInteger: [[self.ratingInput text] integerValue]];
             tasting.pricePerLb    = [NSNumber numberWithFloat:   [[self.priceInput  text] floatValue]];
             
+            // Create relation
+            tasting.cheese        = newCheese;
+            // [tasting setObject:newCheese forKey:@"cheese"];
+            
             self.cheeseTasting = tasting;
+            self.cheese        = newCheese;
         }
     }
+}
+
+// ----------------------------------------------------------------------------------------------------
+// Handle Memory Warnings
+// ----------------------------------------------------------------------------------------------------
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end

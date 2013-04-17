@@ -11,6 +11,7 @@
 #import "CheesyAppDelegate.h"
 #import "CheesyMasterViewController.h"
 #import "CheeseTasting.h"
+#import "Cheese.h"
 
 @implementation CheesyAppDelegate
 
@@ -18,6 +19,7 @@
 {
     // Register Parse subclasses
     [CheeseTasting registerSubclass];
+    [Cheese        registerSubclass];
     
     // Set Parse Keys
     [Parse setApplicationId:@"bX7DUk8pjZub2OGeAzMaREQPIDn6MZHk8fBQIZew"

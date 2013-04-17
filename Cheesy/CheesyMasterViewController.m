@@ -11,6 +11,7 @@
 #import "CheesyDetailViewController.h"
 #import "AddTastingViewController.h"
 #import "CheeseTasting.h"
+#import "Cheese.h"
 
 @implementation CheesyMasterViewController
 
@@ -30,7 +31,7 @@
         self.parseClassName = @"CheeseTasting";
         
         // The key of the PFObject to display in the label of the default cell style
-        self.textKey = @"cheeseName";
+        self.textKey = @"cheese";
         
         // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
         // self.imageKey = @"image";
@@ -120,7 +121,11 @@
     
     // Configure the cell
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [object objectForKey:@"qualityRating"]];
-    cell.textLabel.text       = [object objectForKey:self.textKey];
+
+    PFObject *cheese = [object objectForKey:@"cheese"];
+    [cheese fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        cell.textLabel.text = [cheese objectForKey:@"cheeseName"];
+    }];
     
     // cell.imageView.file = [object objectForKey:self.imageKey];
     
@@ -316,9 +321,10 @@
         CheesyDetailViewController *detailViewController = [segue destinationViewController];
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        CheeseTasting *object = [self.objects objectAtIndex:indexPath.row];
+        CheeseTasting *tasting = [self.objects objectAtIndex:indexPath.row];
         
-        detailViewController.tasting = object;
+        detailViewController.tasting = tasting;
+        // detailViewController.cheese  = tasting.cheese;
         
     }
 }
@@ -332,10 +338,13 @@
     if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
         
         AddTastingViewController *addController = [segue sourceViewController];
+        
         if (addController.cheeseTasting) {
+                        
             // save data to Parse
             [ addController.cheeseTasting save ];
         }
+                
         [self dismissViewControllerAnimated:YES completion:NULL];
         
         // Need to refresh the view

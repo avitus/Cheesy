@@ -8,14 +8,13 @@
 
 #import "CheeseTasting.h"
 
-// Import this header to let CheeseTasting know that PFObject privately provides most
-// of the methods for PFSubclassing.
+// Import this header to let CheeseTasting know that PFObject privately provides most of the methods for PFSubclassing.
 #import <Parse/PFObject+Subclass.h>
 
 @implementation CheeseTasting
 
-@dynamic user;
-@dynamic cheeseName;
+@dynamic user;          // Parse relation
+@dynamic cheese;        // Parse relation
 @dynamic qualityRating;
 @dynamic pricePerLb;
 @dynamic storeName;

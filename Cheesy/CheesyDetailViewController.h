@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class CheeseTasting;
+@class Cheese;
 
 @interface CheesyDetailViewController : UITableViewController
 
 @property (strong, nonatomic) CheeseTasting *tasting;
+@property (strong, nonatomic) Cheese *cheese;
+
 @property (weak, nonatomic) IBOutlet UILabel *cheeseNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cheeseStoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *qualityRatingLabel;

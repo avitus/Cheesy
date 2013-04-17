@@ -44,6 +44,7 @@
 		96814A2D171611F30028E86C /* cheesy_icon_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2C171611F30028E86C /* cheesy_icon_@2x.png */; };
 		96814A2F171624D40028E86C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2E171624D40028E86C /* Default.png */; };
 		96814A31171625050028E86C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A30171625050028E86C /* Default@2x.png */; };
+		96D9F6BF171E150200AEE24C /* Cheese.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F6BE171E150200AEE24C /* Cheese.m */; };
 		96E1DBF0170CBD8F00D9DA8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */; };
 		96E1DBF2170CBD8F00D9DA8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */; };
 		96E1DBF4170CBD8F00D9DA8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */; };
@@ -126,6 +127,8 @@
 		96814A2C171611F30028E86C /* cheesy_icon_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesy_icon_@2x.png"; sourceTree = "<group>"; };
 		96814A2E171624D40028E86C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		96814A30171625050028E86C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		96D9F6BD171E150200AEE24C /* Cheese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cheese.h; sourceTree = "<group>"; };
+		96D9F6BE171E150200AEE24C /* Cheese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cheese.m; sourceTree = "<group>"; };
 		96E1DBEC170CBD8F00D9DA8F /* Cheesy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheesy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -304,6 +307,8 @@
 				96E1DC13170CBD9000D9DA8F /* CheesyDetailViewController.m */,
 				96E1DC82170E425600D9DA8F /* CheeseTasting.h */,
 				96E1DC83170E425600D9DA8F /* CheeseTasting.m */,
+				96D9F6BD171E150200AEE24C /* Cheese.h */,
+				96D9F6BE171E150200AEE24C /* Cheese.m */,
 				96E1DC0C170CBD9000D9DA8F /* Cheesy.xcdatamodeld */,
 				96E1DBF8170CBD8F00D9DA8F /* Supporting Files */,
 			);
@@ -498,6 +503,7 @@
 				96E1DC14170CBD9000D9DA8F /* CheesyDetailViewController.m in Sources */,
 				96E1DC84170E425600D9DA8F /* CheeseTasting.m in Sources */,
 				96E1DC87170F961400D9DA8F /* AddTastingViewController.m in Sources */,
+				96D9F6BF171E150200AEE24C /* Cheese.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
