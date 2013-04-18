@@ -8,6 +8,7 @@
 
 #import <Parse/Parse.h>
 #import "CheesyMasterViewController.h"
+#import "CheesyLoginViewController.h"
 #import "CheesyDetailViewController.h"
 #import "AddTastingViewController.h"
 #import "CheeseTasting.h"
@@ -77,7 +78,7 @@
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
     
-    [query orderByDescending:@"createdAt"];
+    [query orderByDescending:@"qualityRating"];
     
     return query;
 }
@@ -173,7 +174,7 @@
     if (![PFUser currentUser]) { // No user logged in
         
         // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+        PFLogInViewController *logInViewController = [[CheesyLogInViewController alloc] init];
         [logInViewController setDelegate:self]; // Set ourselves as the delegate
         
         // Create the sign up view controller
