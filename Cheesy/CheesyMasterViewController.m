@@ -139,6 +139,35 @@
     return cell;
 }
 
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        CheeseTasting *tasting = [self.objects objectAtIndex:indexPath.row];
+        
+        // Delete the object from Parse and reload the table view
+        [tasting deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                [self loadObjects];
+            }
+        }];
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert)
+    {
+        // Create a new instance of the appropriate class, and save it to Parse
+    }
+}
+
 // ----------------------------------------------------------------------------------------------------
 // Wake fron Nib
 // ----------------------------------------------------------------------------------------------------
@@ -206,6 +235,7 @@
     
     // This method is called every time objects are loaded from Parse via the PFQuery
 }
+
 
 
 // ----------------------------------------------------------------------------------------------------
@@ -344,11 +374,10 @@
                         
             // save data to Parse
             [ addController.cheeseTasting save ];
+            [self loadObjects];
         }
                 
         [self dismissViewControllerAnimated:YES completion:NULL];
-        
-        // Need to refresh the view
         
     }
 }
