@@ -393,45 +393,6 @@
             <point key="canvasLocation" x="459" y="-700"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AddTastingViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddTastingViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cheeseNameInput" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="priceInput" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="ratingInput" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="storeNameInput" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="CheesyDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CheesyDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cheeseNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cheeseStoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pricePerPoundLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="qualityRatingLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CheesyMasterViewController" superclassName="PFQueryTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CheesyMasterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="PFQueryTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFQueryTableViewController.h"/>
-        </class>
-        <class className="PFTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFTableViewCell.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
