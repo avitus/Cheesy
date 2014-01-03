@@ -41,16 +41,16 @@
 - (void)customizeAppearance
 {
     //Set the status bar to black color.
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
+    // [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
     
     // Customize navigation bar - http://www.raywenderlich.com/21703/user-interface-customization-in-ios-6
     // Create resizable images
-    UIImage *gradientImage44 = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
-    UIImage *gradientImage32 = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
+    // UIImage *gradientImage44 = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
+    // UIImage *gradientImage32 = [[UIImage imageNamed:@"navbar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
     
     // Set the background image for *all* UINavigationBars
-    [[UINavigationBar appearance] setBackgroundImage:gradientImage44 forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setBackgroundImage:gradientImage32 forBarMetrics:UIBarMetricsLandscapePhone];
+    // [[UINavigationBar appearance] setBackgroundImage:gradientImage44 forBarMetrics:UIBarMetricsDefault];
+    // [[UINavigationBar appearance] setBackgroundImage:gradientImage32 forBarMetrics:UIBarMetricsLandscapePhone];
     
     // Customize the title text for *all* UINavigationBars
 //    [[UINavigationBar appearance] setTitleTextAttributes:
@@ -66,10 +66,10 @@
 //      nil]];
     
     // Customize navigation button - http://www.raywenderlich.com/21703/user-interface-customization-in-ios-6
-    UIImage *button30 = [[UIImage imageNamed:@"navbar-icon.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
-    UIImage *button24 = [[UIImage imageNamed:@"navbar-icon.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
-    [[UIBarButtonItem appearance] setBackgroundImage:button30 forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [[UIBarButtonItem appearance] setBackgroundImage:button24 forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
+    // UIImage *button30 = [[UIImage imageNamed:@"navbar-icon.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    // UIImage *button24 = [[UIImage imageNamed:@"navbar-icon.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    // [[UIBarButtonItem appearance] setBackgroundImage:button30 forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    // [[UIBarButtonItem appearance] setBackgroundImage:button24 forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
     
 //    [[UIBarButtonItem appearance] setTitleTextAttributes:
 //     [NSDictionary dictionaryWithObjectsAndKeys:
@@ -85,15 +85,15 @@
 //                                                forState:UIControlStateNormal];
     
     // Customize back button
-    UIImage *buttonBack30 = [[UIImage imageNamed:@"back-button.png"]
-                             resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 5)];
-    UIImage *buttonBack24 = [[UIImage imageNamed:@"back-button.png"]
-                             resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 5)];
-    
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:buttonBack30
-                                                      forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:buttonBack24
-                                                      forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
+//    UIImage *buttonBack30 = [[UIImage imageNamed:@"back-button.png"]
+//                             resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 5)];
+//    UIImage *buttonBack24 = [[UIImage imageNamed:@"back-button.png"]
+//                             resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 5)];
+//    
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:buttonBack30
+//                                                      forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:buttonBack24
+//                                                      forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
     
 }
 

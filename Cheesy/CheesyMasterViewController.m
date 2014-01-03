@@ -86,7 +86,10 @@
 }
 
 // ----------------------------------------------------------------------------------------------------
-// Load a background image for the table cell   
+// Load a background image for the table cell
+//
+// NOTE: not currently used now that we have shifted to flat design
+//
 // ----------------------------------------------------------------------------------------------------
 
 -(UIImage *)cellBackgroundForRowAtIndexPath:(NSIndexPath*)indexPath
@@ -133,10 +136,10 @@
     // cell.imageView.file = [object objectForKey:self.imageKey];
     
     // Add a background image
-    UIImage *background = [self cellBackgroundForRowAtIndexPath:indexPath];
-    UIImageView *cellBackgroundView = [[UIImageView alloc] initWithImage:background];
-    cellBackgroundView.image = background;
-    cell.backgroundView = cellBackgroundView;
+//    UIImage *background = [self cellBackgroundForRowAtIndexPath:indexPath];
+//    UIImageView *cellBackgroundView = [[UIImageView alloc] initWithImage:background];
+//    cellBackgroundView.image = background;
+//    cell.backgroundView = cellBackgroundView;
     
     return cell;
 }
@@ -188,7 +191,7 @@
     [super viewDidLoad];
     
     // Add background image
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"leather-background.png"]];
+    // self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"leather-background.png"]];
     
 	// Do any additional setup after loading the view, typically from a nib.
     

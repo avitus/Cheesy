@@ -69,7 +69,6 @@
 		96E1DC1F170CBD9000D9DA8F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF5170CBD8F00D9DA8F /* CoreData.framework */; };
 		96E1DC27170CBD9000D9DA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC25170CBD9000D9DA8F /* InfoPlist.strings */; };
 		96E1DC2A170CBD9000D9DA8F /* CheesyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC29170CBD9000D9DA8F /* CheesyTests.m */; };
-		96E1DC34170CBE7900D9DA8F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC33170CBE7900D9DA8F /* Parse.framework */; };
 		96E1DC36170CBEB600D9DA8F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */; };
 		96E1DC38170CBEC500D9DA8F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */; };
 		96E1DC3A170CBEE200D9DA8F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */; };
@@ -167,7 +166,6 @@
 		96E1DC26170CBD9000D9DA8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96E1DC28170CBD9000D9DA8F /* CheesyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheesyTests.h; sourceTree = "<group>"; };
 		96E1DC29170CBD9000D9DA8F /* CheesyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheesyTests.m; sourceTree = "<group>"; };
-		96E1DC33170CBE7900D9DA8F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -201,7 +199,6 @@
 				96E1DBF0170CBD8F00D9DA8F /* UIKit.framework in Frameworks */,
 				96E1DBF2170CBD8F00D9DA8F /* Foundation.framework in Frameworks */,
 				96E1DBF6170CBD8F00D9DA8F /* CoreData.framework in Frameworks */,
-				96E1DC34170CBE7900D9DA8F /* Parse.framework in Frameworks */,
 				96B4A8AC18763D5C005A72BA /* libCrittercism_v4_3_0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +307,6 @@
 				96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */,
 				96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */,
 				96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */,
-				96E1DC33170CBE7900D9DA8F /* Parse.framework */,
 				96E1DBEF170CBD8F00D9DA8F /* UIKit.framework */,
 				96E1DBF1170CBD8F00D9DA8F /* Foundation.framework */,
 				96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */,
