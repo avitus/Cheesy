@@ -7,6 +7,8 @@
 //
 
 #import <Parse/Parse.h>
+#import "Crittercism.h"
+
 #import "CheesyMasterViewController.h"
 #import "CheesyLoginViewController.h"
 #import "CheesyDetailViewController.h"
@@ -215,6 +217,11 @@
         
         // Present the log in view controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
+    
+    } else {
+        
+        // Capture username for Crittercism
+        [Crittercism setUsername:(NSString *) [PFUser currentUser].username ];
     }
 }
 

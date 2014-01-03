@@ -7,6 +7,7 @@
 //
 
 #import <Parse/Parse.h>
+#import "Crittercism.h"
 
 #import "CheesyAppDelegate.h"
 #import "CheesyMasterViewController.h"
@@ -27,6 +28,9 @@
     
     // Add Parse Analytics
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // Add Performance Monitoring from Crittercism
+    [Crittercism enableWithAppID: @"52c6027e558d6a3d89000007"];
 
     // Override point for customization after application launch.
     [self customizeAppearance];
