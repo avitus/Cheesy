@@ -383,7 +383,7 @@
         if (addController.cheeseTasting) {
                         
             // save data to Parse
-            [ addController.cheeseTasting save ];
+            [ addController.cheeseTasting saveInBackground ];
             [self loadObjects];
         }
                 
