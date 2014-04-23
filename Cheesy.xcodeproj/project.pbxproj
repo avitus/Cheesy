@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96227EEA190740D900897813 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 96227EE8190740D900897813 /* dsym_upload.sh */; };
-		96227EEB190740D900897813 /* libCrittercism_v4_3_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96227EE9190740D900897813 /* libCrittercism_v4_3_3.a */; };
 		962DC6721716260B00779437 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 962DC6711716260B00779437 /* Default-568h@2x.png */; };
 		96622EE2171CB42200C13014 /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 96622EC2171CB42200C13014 /* back-button.png */; };
 		96622EE3171CB42200C13014 /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96622EC3171CB42200C13014 /* back-button@2x.png */; };
@@ -46,6 +44,19 @@
 		96814A2D171611F30028E86C /* cheesy_icon_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2C171611F30028E86C /* cheesy_icon_@2x.png */; };
 		96814A2F171624D40028E86C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2E171624D40028E86C /* Default.png */; };
 		96814A31171625050028E86C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A30171625050028E86C /* Default@2x.png */; };
+		96C79ED719085A2600E32CE7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C79ED619085A2600E32CE7 /* Parse.framework */; };
+		96C79ED819085A6D00E32CE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */; };
+		96C79ED919085A6D00E32CE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */; };
+		96C79EDA19085A6D00E32CE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */; };
+		96C79EDB19085A6D00E32CE7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */; };
+		96C79EDC19085A6D00E32CE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96227ED719073B7000897813 /* libz.dylib */; };
+		96C79EDD19085A6D00E32CE7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC3D170CBF0000D9DA8F /* MobileCoreServices.framework */; };
+		96C79EDE19085A6D00E32CE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC3F170CBF0F00D9DA8F /* QuartzCore.framework */; };
+		96C79EDF19085A6D00E32CE7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC41170CBF1A00D9DA8F /* Security.framework */; };
+		96C79EE119085A6D00E32CE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC45170CBF3200D9DA8F /* SystemConfiguration.framework */; };
+		96C79F2B19085D8D00E32CE7 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 96C79F2919085D8D00E32CE7 /* dsym_upload.sh */; };
+		96C79F2C19085D8D00E32CE7 /* libCrittercism_v4_3_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C79F2A19085D8D00E32CE7 /* libCrittercism_v4_3_3.a */; };
+		96C79F2D19085EAC00E32CE7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC43170CBF2700D9DA8F /* StoreKit.framework */; };
 		96D9F6BF171E150200AEE24C /* Cheese.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F6BE171E150200AEE24C /* Cheese.m */; };
 		96DEB8BC171F525400B44337 /* CheesyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB8BB171F525400B44337 /* CheesyLoginViewController.m */; };
 		96DEB8BE171F5B0400B44337 /* cheesy-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DEB8BD171F5B0400B44337 /* cheesy-logo.png */; };
@@ -55,9 +66,6 @@
 		96E1DBFC170CBD8F00D9DA8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DBFA170CBD8F00D9DA8F /* InfoPlist.strings */; };
 		96E1DBFE170CBD8F00D9DA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DBFD170CBD8F00D9DA8F /* main.m */; };
 		96E1DC02170CBD8F00D9DA8F /* CheesyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC01170CBD8F00D9DA8F /* CheesyAppDelegate.m */; };
-		96E1DC04170CBD9000D9DA8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC03170CBD9000D9DA8F /* Default.png */; };
-		96E1DC06170CBD9000D9DA8F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC05170CBD9000D9DA8F /* Default@2x.png */; };
-		96E1DC08170CBD9000D9DA8F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC07170CBD9000D9DA8F /* Default-568h@2x.png */; };
 		96E1DC0B170CBD9000D9DA8F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E1DC09170CBD9000D9DA8F /* MainStoryboard.storyboard */; };
 		96E1DC0E170CBD9000D9DA8F /* Cheesy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC0C170CBD9000D9DA8F /* Cheesy.xcdatamodeld */; };
 		96E1DC11170CBD9000D9DA8F /* CheesyMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E1DC10170CBD9000D9DA8F /* CheesyMasterViewController.m */; };
@@ -84,11 +92,6 @@
 
 /* Begin PBXFileReference section */
 		96227ED719073B7000897813 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		96227EE5190740D900897813 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
-		96227EE6190740D900897813 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
-		96227EE7190740D900897813 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
-		96227EE8190740D900897813 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
-		96227EE9190740D900897813 /* libCrittercism_v4_3_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v4_3_3.a; sourceTree = "<group>"; };
 		962DC6711716260B00779437 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		96622EC2171CB42200C13014 /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
 		96622EC3171CB42200C13014 /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
@@ -126,6 +129,12 @@
 		96814A2C171611F30028E86C /* cheesy_icon_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesy_icon_@2x.png"; sourceTree = "<group>"; };
 		96814A2E171624D40028E86C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		96814A30171625050028E86C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		96C79ED619085A2600E32CE7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		96C79F2619085D8D00E32CE7 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
+		96C79F2719085D8D00E32CE7 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
+		96C79F2819085D8D00E32CE7 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
+		96C79F2919085D8D00E32CE7 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
+		96C79F2A19085D8D00E32CE7 /* libCrittercism_v4_3_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v4_3_3.a; sourceTree = "<group>"; };
 		96D9F6BD171E150200AEE24C /* Cheese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cheese.h; sourceTree = "<group>"; };
 		96D9F6BE171E150200AEE24C /* Cheese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cheese.m; sourceTree = "<group>"; };
 		96DEB8BA171F525400B44337 /* CheesyLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheesyLoginViewController.h; sourceTree = SOURCE_ROOT; };
@@ -177,9 +186,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96227EEB190740D900897813 /* libCrittercism_v4_3_3.a in Frameworks */,
+				96C79F2D19085EAC00E32CE7 /* StoreKit.framework in Frameworks */,
+				96C79EE119085A6D00E32CE7 /* SystemConfiguration.framework in Frameworks */,
+				96C79ED819085A6D00E32CE7 /* AudioToolbox.framework in Frameworks */,
+				96C79ED919085A6D00E32CE7 /* CFNetwork.framework in Frameworks */,
+				96C79EDA19085A6D00E32CE7 /* CoreGraphics.framework in Frameworks */,
+				96C79EDB19085A6D00E32CE7 /* CoreLocation.framework in Frameworks */,
+				96C79EDC19085A6D00E32CE7 /* libz.dylib in Frameworks */,
+				96C79EDD19085A6D00E32CE7 /* MobileCoreServices.framework in Frameworks */,
+				96C79EDE19085A6D00E32CE7 /* QuartzCore.framework in Frameworks */,
+				96C79EDF19085A6D00E32CE7 /* Security.framework in Frameworks */,
 				96E1DBF0170CBD8F00D9DA8F /* UIKit.framework in Frameworks */,
 				96E1DBF2170CBD8F00D9DA8F /* Foundation.framework in Frameworks */,
+				96C79F2C19085D8D00E32CE7 /* libCrittercism_v4_3_3.a in Frameworks */,
+				96C79ED719085A2600E32CE7 /* Parse.framework in Frameworks */,
 				96E1DBF6170CBD8F00D9DA8F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,18 +218,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96227EE4190740D900897813 /* CrittercismSDK */ = {
-			isa = PBXGroup;
-			children = (
-				96227EE5190740D900897813 /* CRFilter.h */,
-				96227EE6190740D900897813 /* Crittercism.h */,
-				96227EE7190740D900897813 /* CrittercismDelegate.h */,
-				96227EE8190740D900897813 /* dsym_upload.sh */,
-				96227EE9190740D900897813 /* libCrittercism_v4_3_3.a */,
-			);
-			path = CrittercismSDK;
-			sourceTree = "<group>";
-		};
 		96622EC1171CB42200C13014 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +258,18 @@
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
 		};
+		96C79F2519085D8D00E32CE7 /* CrittercismSDK */ = {
+			isa = PBXGroup;
+			children = (
+				96C79F2619085D8D00E32CE7 /* CRFilter.h */,
+				96C79F2719085D8D00E32CE7 /* Crittercism.h */,
+				96C79F2819085D8D00E32CE7 /* CrittercismDelegate.h */,
+				96C79F2919085D8D00E32CE7 /* dsym_upload.sh */,
+				96C79F2A19085D8D00E32CE7 /* libCrittercism_v4_3_3.a */,
+			);
+			path = CrittercismSDK;
+			sourceTree = "<group>";
+		};
 		96E1DBE3170CBD8F00D9DA8F = {
 			isa = PBXGroup;
 			children = (
@@ -278,7 +298,8 @@
 		96E1DBEE170CBD8F00D9DA8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				96227EE4190740D900897813 /* CrittercismSDK */,
+				96C79F2519085D8D00E32CE7 /* CrittercismSDK */,
+				96C79ED619085A2600E32CE7 /* Parse.framework */,
 				96227ED719073B7000897813 /* libz.dylib */,
 				96E1DC45170CBF3200D9DA8F /* SystemConfiguration.framework */,
 				96E1DC43170CBF2700D9DA8F /* StoreKit.framework */,
@@ -401,6 +422,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Cheesy;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Andy Vitus";
 			};
@@ -428,9 +450,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E1DBFC170CBD8F00D9DA8F /* InfoPlist.strings in Resources */,
-				96E1DC04170CBD9000D9DA8F /* Default.png in Resources */,
-				96E1DC06170CBD9000D9DA8F /* Default@2x.png in Resources */,
-				96E1DC08170CBD9000D9DA8F /* Default-568h@2x.png in Resources */,
 				96E1DC0B170CBD9000D9DA8F /* MainStoryboard.storyboard in Resources */,
 				96814A2B171611E30028E86C /* cheesy_icon.png in Resources */,
 				96814A2D171611F30028E86C /* cheesy_icon_@2x.png in Resources */,
@@ -455,7 +474,6 @@
 				96622EF3171CB42200C13014 /* leather-background@2x.png in Resources */,
 				96622EF4171CB42200C13014 /* list-item.png in Resources */,
 				96622EF5171CB42200C13014 /* list-item@2x.png in Resources */,
-				96227EEA190740D900897813 /* dsym_upload.sh in Resources */,
 				96622EF6171CB42200C13014 /* list-mask.png in Resources */,
 				96622EF7171CB42200C13014 /* list-mask@2x.png in Resources */,
 				96622EF8171CB42200C13014 /* navbar-icon.png in Resources */,
@@ -469,6 +487,7 @@
 				96622F00171CB42200C13014 /* tabbar.png in Resources */,
 				96622F01171CB42200C13014 /* tabbar@2x.png in Resources */,
 				96622F04171CBB9200C13014 /* rating.png in Resources */,
+				96C79F2B19085D8D00E32CE7 /* dsym_upload.sh in Resources */,
 				96622F05171CBB9200C13014 /* rating@2x.png in Resources */,
 				96DEB8BE171F5B0400B44337 /* cheesy-logo.png in Resources */,
 			);
@@ -622,19 +641,20 @@
 		96E1DC2E170CBD9000D9DA8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
+					"$(SRCROOT)/**",
 					/Users/andyvitus/Projects/Cheesy,
 					"$(PROJECT_DIR)",
 				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cheesy/Cheesy-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "Cheesy/Cheesy-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Crittercism_v4_3_0/CrittercismSDK\"",
 					"\"$(SRCROOT)/CrittercismSDK\"",
 					"$(PROJECT_DIR)/CrittercismSDK",
 				);
@@ -646,19 +666,20 @@
 		96E1DC2F170CBD9000D9DA8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					/Users/andyvitus/Projects/Cheesy,
-					"$(PROJECT_DIR)",
+					"$(inherited)/**",
+					"$(SRCROOT)/**",
+					"/Users/andyvitus/Projects/Cheesy/**",
+					"$(PROJECT_DIR)/**",
 				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cheesy/Cheesy-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "Cheesy/Cheesy-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Crittercism_v4_3_0/CrittercismSDK\"",
 					"\"$(SRCROOT)/CrittercismSDK\"",
 					"$(PROJECT_DIR)/CrittercismSDK",
 				);
