@@ -386,8 +386,6 @@
             [ addController.cheeseTasting saveInBackground ];
             [self loadObjects];
         }
-                
-        [self dismissViewControllerAnimated:YES completion:NULL];
         
     }
 }
@@ -395,7 +393,7 @@
 - (IBAction)cancel:(UIStoryboardSegue *)segue
 {
     if ([[segue identifier] isEqualToString:@"CancelInput"]) {
-        [self dismissViewControllerAnimated:YES completion:NULL];
+        // Nothing to do
     }
 }
 
