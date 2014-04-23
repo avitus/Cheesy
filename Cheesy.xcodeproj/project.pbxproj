@@ -45,18 +45,18 @@
 		96814A2F171624D40028E86C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A2E171624D40028E86C /* Default.png */; };
 		96814A31171625050028E86C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96814A30171625050028E86C /* Default@2x.png */; };
 		96C79ED719085A2600E32CE7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C79ED619085A2600E32CE7 /* Parse.framework */; };
-		96C79ED819085A6D00E32CE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */; };
-		96C79ED919085A6D00E32CE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */; };
-		96C79EDA19085A6D00E32CE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */; };
-		96C79EDB19085A6D00E32CE7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */; };
-		96C79EDC19085A6D00E32CE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96227ED719073B7000897813 /* libz.dylib */; };
-		96C79EDD19085A6D00E32CE7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC3D170CBF0000D9DA8F /* MobileCoreServices.framework */; };
-		96C79EDE19085A6D00E32CE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC3F170CBF0F00D9DA8F /* QuartzCore.framework */; };
-		96C79EDF19085A6D00E32CE7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC41170CBF1A00D9DA8F /* Security.framework */; };
-		96C79EE119085A6D00E32CE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC45170CBF3200D9DA8F /* SystemConfiguration.framework */; };
 		96C79F2B19085D8D00E32CE7 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 96C79F2919085D8D00E32CE7 /* dsym_upload.sh */; };
 		96C79F2C19085D8D00E32CE7 /* libCrittercism_v4_3_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C79F2A19085D8D00E32CE7 /* libCrittercism_v4_3_3.a */; };
-		96C79F2D19085EAC00E32CE7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC43170CBF2700D9DA8F /* StoreKit.framework */; };
+		96C79F3319086F9600E32CE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */; };
+		96C79F3419086F9600E32CE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */; };
+		96C79F3519086F9600E32CE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBF3170CBD8F00D9DA8F /* CoreGraphics.framework */; };
+		96C79F3619086F9600E32CE7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */; };
+		96C79F3719086F9600E32CE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96227ED719073B7000897813 /* libz.dylib */; };
+		96C79F3819086F9600E32CE7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC3D170CBF0000D9DA8F /* MobileCoreServices.framework */; };
+		96C79F3919086F9600E32CE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC3F170CBF0F00D9DA8F /* QuartzCore.framework */; };
+		96C79F3A19086F9600E32CE7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC41170CBF1A00D9DA8F /* Security.framework */; };
+		96C79F3B19086F9600E32CE7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC43170CBF2700D9DA8F /* StoreKit.framework */; };
+		96C79F3C19086F9600E32CE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DC45170CBF3200D9DA8F /* SystemConfiguration.framework */; };
 		96D9F6BF171E150200AEE24C /* Cheese.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F6BE171E150200AEE24C /* Cheese.m */; };
 		96DEB8BC171F525400B44337 /* CheesyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB8BB171F525400B44337 /* CheesyLoginViewController.m */; };
 		96DEB8BE171F5B0400B44337 /* cheesy-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DEB8BD171F5B0400B44337 /* cheesy-logo.png */; };
@@ -169,7 +169,6 @@
 		96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		96E1DC3B170CBEF100D9DA8F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		96E1DC3D170CBF0000D9DA8F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		96E1DC3F170CBF0F00D9DA8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		96E1DC41170CBF1A00D9DA8F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -186,16 +185,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C79F2D19085EAC00E32CE7 /* StoreKit.framework in Frameworks */,
-				96C79EE119085A6D00E32CE7 /* SystemConfiguration.framework in Frameworks */,
-				96C79ED819085A6D00E32CE7 /* AudioToolbox.framework in Frameworks */,
-				96C79ED919085A6D00E32CE7 /* CFNetwork.framework in Frameworks */,
-				96C79EDA19085A6D00E32CE7 /* CoreGraphics.framework in Frameworks */,
-				96C79EDB19085A6D00E32CE7 /* CoreLocation.framework in Frameworks */,
-				96C79EDC19085A6D00E32CE7 /* libz.dylib in Frameworks */,
-				96C79EDD19085A6D00E32CE7 /* MobileCoreServices.framework in Frameworks */,
-				96C79EDE19085A6D00E32CE7 /* QuartzCore.framework in Frameworks */,
-				96C79EDF19085A6D00E32CE7 /* Security.framework in Frameworks */,
+				96C79F3319086F9600E32CE7 /* AudioToolbox.framework in Frameworks */,
+				96C79F3419086F9600E32CE7 /* CFNetwork.framework in Frameworks */,
+				96C79F3519086F9600E32CE7 /* CoreGraphics.framework in Frameworks */,
+				96C79F3619086F9600E32CE7 /* CoreLocation.framework in Frameworks */,
+				96C79F3719086F9600E32CE7 /* libz.dylib in Frameworks */,
+				96C79F3819086F9600E32CE7 /* MobileCoreServices.framework in Frameworks */,
+				96C79F3919086F9600E32CE7 /* QuartzCore.framework in Frameworks */,
+				96C79F3A19086F9600E32CE7 /* Security.framework in Frameworks */,
+				96C79F3B19086F9600E32CE7 /* StoreKit.framework in Frameworks */,
+				96C79F3C19086F9600E32CE7 /* SystemConfiguration.framework in Frameworks */,
 				96E1DBF0170CBD8F00D9DA8F /* UIKit.framework in Frameworks */,
 				96E1DBF2170CBD8F00D9DA8F /* Foundation.framework in Frameworks */,
 				96C79F2C19085D8D00E32CE7 /* libCrittercism_v4_3_3.a in Frameworks */,
@@ -306,7 +305,6 @@
 				96E1DC41170CBF1A00D9DA8F /* Security.framework */,
 				96E1DC3F170CBF0F00D9DA8F /* QuartzCore.framework */,
 				96E1DC3D170CBF0000D9DA8F /* MobileCoreServices.framework */,
-				96E1DC3B170CBEF100D9DA8F /* libz.1.1.3.dylib */,
 				96E1DC39170CBEE200D9DA8F /* CoreLocation.framework */,
 				96E1DC37170CBEC500D9DA8F /* CFNetwork.framework */,
 				96E1DC35170CBEB600D9DA8F /* AudioToolbox.framework */,
